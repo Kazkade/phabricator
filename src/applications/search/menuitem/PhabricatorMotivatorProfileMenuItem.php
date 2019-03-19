@@ -61,30 +61,30 @@ final class PhabricatorMotivatorProfileMenuItem
 
     switch ($source) {
       case 'catfacts':
-	$facts = $this->getCatFacts();
+        $facts = $this->getCatFacts();
         $fact_name = pht('Cat Facts');
-        $fact_icon = 'fa-paw';
-	break;
+       	$fact_icon = 'fa-paw';
+        break;
       case 'dogfacts':
-	$facts = $this->getDogFacts();
+        $facts = $this->getDogFacts();
         $fact_name = pht('Dog Facts');
         $fact_icon = 'fa-dog';
-	break;
+        break;
       case 'sciencefacts':
-	$facts = $this->getScienceFacts();
+        $facts = $this->getScienceFacts();
         $fact_name = pht('Science Facts');
         $fact_icon = 'fa-atom';
-	break;
+        break;
       case 'historyfacts':
-	$facts = $this->getHistoryFacts();
+        $facts = $this->getHistoryFacts();
         $fact_name = pht('History Facts');
         $fact_icon = 'fa-monument';
-	break;
+        break;
       case 'foodfacts':
-	$facts = $this->getFoodFacts();
+        $facts = $this->getFoodFacts();
         $fact_name = pht('Food Facts');
         $fact_icon = 'fa-utensils';
-	break;
+        break;
       default:
         $facts = $this->getCatFacts();
         $fact_name = pht('Cat Facts');
